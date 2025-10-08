@@ -1,0 +1,11 @@
+asgiref==3.10.0
+click==8.3.0
+Django==5.2.7
+django-htmx==1.26.0
+django-tailwind-cli==4.4.2
+django-typer==3.3.2
+semver==3.0.4
+shellingham==1.5.4
+sqlparse==0.5.3
+typer-slim==0.19.2
+typing_extensions==4.15.0
