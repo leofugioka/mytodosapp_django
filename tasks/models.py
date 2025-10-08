@@ -3,6 +3,13 @@ from django.db import models
 # Create your models here.
 
 class Task(models.Model):
+    task_list = models.ForeignKey(
+        'lists.TaskList',
+        on_delete=models.CASCADE,
+        related_name='tasks',
+        verbose_name="Lista de Tarefas"
+    )
+    
     title = models.CharField(max_length=255, verbose_name="Título")
     description = models.TextField(blank=True, null=True, verbose_name="Descrição")
     is_completed = models.BooleanField(default=False, verbose_name="Concluído")

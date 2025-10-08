@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # My Custom User
-    'users.app.UserConfig',
+    'users.apps.UsersConfig',
     # Django Apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # My Apps
-    'tasks.app.TasksConfig',
+    'tasks.apps.TasksConfig',
+    'lists.apps.ListsConfig',
     # Third Party Apps
     "django_tailwind_cli",
     "django_htmx",
